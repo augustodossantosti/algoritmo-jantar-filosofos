@@ -100,17 +100,16 @@ public class Filosofo extends Thread
             System.out.println("ERROR>" + ex.getMessage());
             return;
         }
-
     }
 
-    public int verVizinhoDireita()
+    private int verVizinhoDireita()
     {
         // Rationa o valor em 5 posições, ou seja, se o ID deste filósofo acrescentado
         // de um for maior que quatro, passa a ser zero
         return (this.id + 1) % 5;
     }
 
-    public int verVizinhoEsquerda()
+    private int verVizinhoEsquerda()
     {
         if (this.id == 0)
         {
